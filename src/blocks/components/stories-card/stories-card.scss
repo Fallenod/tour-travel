@@ -1,0 +1,55 @@
+.card {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  @include lg {
+    flex: 1 1 40%;
+  }
+  @include sm {
+    flex: 1 1 100%;
+  }
+  &__img {
+    width: 100%;
+    height: rem(230);
+    object-fit: cover;
+    object-position: top;
+    border-radius: rem(8) rem(8) 0 0;
+    margin-bottom: rem(13);
+  }
+  &__title {
+    margin-bottom: rem(13);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 30px;
+    color: var(--black);
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: rem(28);
+
+  }
+  &__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--dark-gray);
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: rem(23);
+  }
+  &__link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--orange);
+  }
+}

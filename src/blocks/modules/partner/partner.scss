@@ -1,0 +1,81 @@
+.partner {
+  margin-bottom: rem(280);
+  @include lg {
+    margin-bottom: rem(20);
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: rem(60);
+  }
+  &__title {
+  }
+  &__content {
+    &-item {
+      display: flex;
+      @include lg {
+        flex-direction: column;
+      }
+    }
+  }
+  &__description {
+    align-self: center;
+    width: 100%;
+  }
+  &__quote {
+    font-family: Mulish;
+    font-size: 24px;
+    line-height: 36px;
+    width: 450px;
+    margin-top: rem(30);
+    margin-bottom: rem(40);
+  }
+  &__subtitle {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+  }
+  &__text {
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 48px;
+  }
+  &__media {
+    width: 100%;
+    @include lg {
+      text-align: center;
+    }
+  }
+  &__img {
+    width: 384px;
+    height: 491px;
+    border-radius: 14px;
+    &-container {
+      position: relative;
+      display: inline;
+      margin-left: rem(74);
+      @include lg {
+        margin-left: rem(0);
+      }
+    }
+  }
+  &__btn {
+    width: 40px;
+    &-container {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 132px;
+      height: 60px;
+      //   transform: translate(-50%, -50%);
+      background: var(--white);
+      border-radius: 16px 0px 0px 0px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 22px;
+      z-index: 10;
+    }
+  }
+}

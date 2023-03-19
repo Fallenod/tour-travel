@@ -1,0 +1,12 @@
+.guides-box {
+  margin-bottom: rem(342);
+  @include lg {
+    margin-bottom: rem(50);
+  }
+  &__img {
+    position: absolute;
+    top: 41%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+}

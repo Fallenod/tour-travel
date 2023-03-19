@@ -1,0 +1,11 @@
+include ../../../blocks/components/stories-card/stories-card
+include ../../../blocks/components/destinations-card/destinations-card
+
+mixin gallery(data, typeCard)
+    .gallery
+        each item in data
+            if typeCard == "stories"
+                +stories-card(item)
+            if typeCard == "destinations"
+                +destinations-card(item)
+            

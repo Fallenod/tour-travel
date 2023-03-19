@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  align-items: center;
+  padding-top: rem(67);
+  padding-bottom: rem(47);
+  margin-bottom: rem(380);
+  height: rem(688);
+  @include lg {
+    flex-direction: column;
+    gap: 4rem;
+    height: auto;
+    margin-bottom: rem(50);
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(74);
+  }
+  &__title {
+    font-weight: bold;
+    font-size: rem(64);
+    line-height: rem(80);
+    font-family: "Playfair Display", serif;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: rem(22);
+    line-height: rem(27);
+    color: var(--black);
+  }
+  &__select-container {
+    margin-top: rem(71);
+    margin-bottom: rem(51);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__media {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include lg {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 51%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    @include lg {
+      position: static;
+      transform: none;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+  &__btn {
+    width: rem(180);
+    height: rem(60);
+  }
+}

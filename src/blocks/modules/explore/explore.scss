@@ -1,0 +1,18 @@
+.explore-box {
+  margin-bottom: rem(403);
+  @include lg {
+    margin-bottom: rem(50);
+  }
+  &__inner {
+    flex-direction: row-reverse;
+  }
+  &__content {
+    align-items: end;
+  }
+  &__img {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+}

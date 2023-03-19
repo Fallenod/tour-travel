@@ -1,0 +1,26 @@
+include ../../../blocks/components/block/block
+
+- 
+  var destinationsList = [
+    { 
+        title: "Raja Ampat",
+        text: "Indonesia",
+        img: "../../../img/svg/indonesia.png", 
+    },
+    { 
+        title: "Fanjingshan",
+        text: "China",
+        img: "../../../img/svg/china.png", 
+    },
+    { 
+        title: "Vevey",
+        text: "Switzerland",
+        img: "../../../img/svg/switzerland.png", 
+    },
+    { 
+        title: "Skadar",
+        text: "Montenegro",
+        img: "../../../img/svg/montenegro.png", 
+    },
+  ]
++block('Featured destinations', destinationsList, 'destinations')

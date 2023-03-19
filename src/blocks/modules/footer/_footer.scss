@@ -1,0 +1,85 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--footer-gray);
+  color: var(--footer-gray-text);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(80) 0;
+    @include md {
+      flex-direction: column;
+      gap: rem(32);
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    gap: rem(26);
+    padding-right: rem(150);
+    @include lg {
+      flex: 1;
+      padding-right: rem(0);
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(55);
+  }
+  &__text {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: rem(18);
+    line-height: 28px;
+  }
+  &__copyright {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: rem(17);
+    line-height: 28px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 60%;
+    @include lg {
+      flex: 3;
+    }
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: rem(16);
+    }
+  }
+  &__nav {
+    padding: 0 0.5rem;
+    &-item {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 300;
+      font-size: rem(18);
+      line-height: 38px;
+      cursor: pointer;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(31) 0;
+    border-top: rem(0.6) solid var(--hr-color);
+    gap: rem(35);
+    @include md {
+      padding: rem(16) 0;
+    }
+    &-item {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+include ../../../blocks/components/title-h2/title-h2
+
+mixin box(pic = '../../../img/svg/about.svg', data = 'text', type)
+    if type == 'guides'
+        section.box.guides-box
+            .box__inner.wrapper
+                .box__content
+                    .box__area
+                        +title-h2(data.title)
+                        p.box__text= data.text
+                        +btn({}).box__btn= data.buttonText
+                .box__media
+                    img(src=pic alt='pic').box__img.guides-box__img
+    if type == 'explore'
+        section.box.explore-box
+            .box__inner.wrapper.explore-box__inner
+                .box__content.explore-box__content
+                    .box__area
+                        +title-h2(data.title)
+                        p.box__text= data.text
+                        +btn({}).box__btn= data.buttonText
+                .box__media
+                    img(src=pic alt='pic').box__img.explore-box__img

@@ -1,0 +1,25 @@
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  &__view {
+    position: relative;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 17px;
+    padding-right: 17px;
+    color: var(--orange);
+    cursor: pointer;
+    &::after {
+      content: "";
+      width: 6px;
+      height: 11px;
+      position: absolute;
+      left: 75px;
+      bottom: 40%;
+      background-image: url(../../../img/svg/view.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}

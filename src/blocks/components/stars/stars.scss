@@ -1,0 +1,8 @@
+.stars {
+  display: flex;
+  gap: 16px;
+  &__item {
+    width: 25px;
+    color: red;
+  }
+}

@@ -1,0 +1,65 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include lg {
+    flex-direction: column;
+  }
+  &__inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @include lg {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    @include lg {
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: rem(36);
+    line-height: rem(50);
+    font-family: "Playfair Display", serif;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: rem(17);
+    line-height: rem(30);
+    color: var(--dark-gray);
+    font-family: "Mulish", sans-serif;
+    padding-top: rem(20);
+    padding-bottom: rem(39);
+  }
+  &__media {
+    position: relative;
+    width: 50%;
+    @include lg {
+      width: 100%;
+    }
+  }
+  &__img {
+    object-fit: contain;
+    z-index: -1;
+    @include lg {
+      position: static;
+      width: 100%;
+      transform: none;
+    }
+  }
+  &__btn {
+    width: rem(164);
+    height: rem(48);
+  }
+  &__area {
+    width: rem(440);
+    @include lg {
+      width: 100%;
+    }
+  }
+}

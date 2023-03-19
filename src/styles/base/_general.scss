@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  @include lg {
+    font-size: calc(100vw / 768 * 16);
+  }
+  @include md {
+    font-size: calc(100vw / 480 * 16);
+  }
+  @include sm {
+    font-size: calc(100vw / 375 * 16);
+  }
+}
+h1,h2,p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+section,
+header,
+footer {
+  padding: 0 max(2rem, (50vw - 616px));
+}
+.wrapper {
+  padding-left: rem(48);
+  padding-right: rem(48);
+  @include lg {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.bold {
+  font-weight: 700;
+  color: var(--bold);
+}

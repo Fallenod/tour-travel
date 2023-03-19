@@ -1,0 +1,14 @@
+include ../../../blocks/components/title-box/title-box
+include ../../../blocks/components/gallery/gallery
+
+mixin block( title, data, type )
+    if type == 'stories'
+        section.block.stories-block
+            .block__content.wrapper
+                +title-box(title)
+                +gallery(data, type)
+    if type == 'destinations'
+        section.block.destinations-block
+            .block__content.wrapper
+                +title-box(title)
+                +gallery(data, type)

@@ -1,0 +1,40 @@
+.destinations-card {
+  position: relative;
+  cursor: pointer;
+  @include lg {
+    flex: 1 1 40%;
+  }
+  @include sm {
+    flex: 1 1 100%;
+  }
+  &__img {
+    width: 100%;
+    border-radius: rem(8);
+  }
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: rem(5);
+    bottom: 0;
+    width: 45.97%;
+    height: rem(58);
+    background: var(--white);
+    border-radius: 0 rem(6) 0 0;
+  }
+  &__title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: var(--black);
+    margin: 0;
+  }
+  &__text {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--dark-gray);
+  }
+}

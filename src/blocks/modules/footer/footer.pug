@@ -1,0 +1,63 @@
+include ../../../blocks/components/logo/logo
+
+- 
+  var destinationsList = [
+    { name: "Destinations", url: "#" },
+    { name: "Africa", url: "#" },
+    { name: "Antarctica", url: "#" },
+    { name: "Asia", url: "#" },
+    { name: "Europe", url: "#" },
+    { name: "America", url: "#" },
+  ]
+  var shopList = [
+    { name: "Shop", url: "#" },
+    { name: "Destination Guides", url: "#" },
+    { name: "Pictorial Gifts", url: "#" },
+    { name: "Special Offers", url: "#" },
+    { name: "Delivery Times", url: "#" },
+    { name: "FAQs", url: "#" },
+  ]
+  var interestsList = [
+    { name: "Interests", url: "#" },
+    { name: "Adventure Travel", url: "#" },
+    { name: "Art And Culture", url: "#" },
+    { name: "Wildfire And Nature", url: "#" },
+    { name: "Family Holidays", url: "#" },
+    { name: "Food And Drink", url: "#" },
+  ]
+
+footer.footer
+  .footer__inner
+    .footer__description
+      +logo()
+      .footer__info
+        .footer__text
+          | Plan and book your perfect trip with
+          | expert advice, travel tips destination
+          | information from us
+        .footer__copyright &copy;2020 Thousand Sunny. All rights reserved
+    .footer__menu
+      ul.footer__nav
+        each item, index in destinationsList
+          if index == 0
+            li.footer__nav-item.bold= item.name
+          else
+            li.footer__nav-item= item.name
+      ul.footer__nav
+        each item, index in shopList
+          if index == 0
+            li.footer__nav-item.bold= item.name
+          else
+            li.footer__nav-item= item.name
+      ul.footer__nav
+        each item, index in interestsList
+          if index == 0
+            li.footer__nav-item.bold= item.name
+          else
+            li.footer__nav-item= item.name
+  .footer__social
+    img.footer__social-item(src='../../../img/svg/twitter.svg' alt='')
+    img.footer__social-item(src='../../../img/svg/facebook.svg' alt='')
+    img.footer__social-item(src='../../../img/svg/insta.svg' alt='')
+    img.footer__social-item(src='../../../img/svg/in.svg' alt='')
+    img.footer__social-item(src='../../../img/svg/youtube.svg' alt='')

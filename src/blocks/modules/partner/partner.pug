@@ -1,0 +1,22 @@
+include ../../../blocks/components/title-h2/title-h2
+include ../../../blocks/components/stars/stars
+
+section.partner
+    .partner__inner.wrapper
+        +title-h2('Testimonials').partner__title
+        .partner__content
+            .partner__content-item
+                .partner__description
+                    +stars()
+                    p.partner__quote
+                        | &ldquo;Quisque in lacus a urna fermentum euismod. Integer
+                        | mi nibh, dapibus ac scelerisque eu, facilisis quis
+                        | purus. Morbi blandit sit amet turpis nec&rdquo;
+                    p.partner__subtitle Edward Newgate
+                    p.partner__text Founder Circle
+                .partner__media
+                    .partner__img-container
+                        img.partner__img(src='../../../img/svg/partner.png' alt='')
+                        .partner__btn-container
+                            img.partner__btn(src='../../../img/svg/previous.svg' alt='')
+                            img.partner__btn(src='../../../img/svg/next.svg' alt='')

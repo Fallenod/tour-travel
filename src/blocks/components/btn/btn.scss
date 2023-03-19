@@ -1,0 +1,18 @@
+.btn {
+  display: block;
+  min-width: rem(132);
+  border: rem(1) solid var(--orange);
+  border-radius: .5em;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: rem(16);
+  &-primary {
+    background: var(--orange);
+    color: var(--white);
+  }
+  &-secondary {
+    background: var(--white);
+    color: var(--orange);
+  }
+}

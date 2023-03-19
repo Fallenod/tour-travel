@@ -1,0 +1,29 @@
+include ../../../blocks/components/btn/btn
+include ../../../blocks/components/logo/logo
+include header.js
+
+- 
+  var navbarList = [
+    { name: "Home", url: "#" },
+    { name: "Destinations", url: "#" },
+    { name: "About", url: "#" },
+    { name: "Partner", url: "#" },
+  ]
+header.header
+  .burger-logo
+    +logo()
+  .menu
+    nav.navbar
+      ul
+        each item in navbarList
+          li
+            a(href=item.url)= item.name
+  nav.navbar
+    ul.navbar__list
+      each item in navbarList
+        li.navbar__item
+          a(href=item.url)= item.name
+    .navbar__btn-group
+      +btn({ skin: 'btn-secondary' }).header__btn Login
+      +btn({}).header__btn Register
+      img(src='../../../img/svg/menu.svg' alt='').menu-btn.switch

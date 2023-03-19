@@ -1,0 +1,18 @@
+include ../../../blocks/components/btn/btn
+include ../../../blocks/components/select/select
+
+section.main
+    .main__content
+        h1.main__title
+            |Explore
+            |and Travel
+        form.main__form
+            p.main__text Holiday finder
+            .main__select-container
+                +select('Location')
+                +select('Activity')
+                +select('Grade')
+                +select('Date')
+            +btn({}).main__btn Explore
+    .main__media
+        img(src='../../../img/svg/home.png' alt='').main__img

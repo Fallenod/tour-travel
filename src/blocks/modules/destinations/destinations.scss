@@ -1,0 +1,6 @@
+.destinations-block {
+  margin-bottom: rem(385);
+  @include lg {
+    margin-bottom: rem(20);
+  }
+}
